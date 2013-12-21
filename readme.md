@@ -4,7 +4,9 @@ The Ultimate Blockbuster Asynchronous JavaScript Loader, period.
 
 ##What does it do?
 
-Asyncloader is a mini tiny JavaScript library that allows you to load JavaScript libraries asynchronously, with simplified and effective dependency resolution engine.
+Asyncloader is a mini tiny JavaScript library that allows you to load JavaScript libraries asynchronously, with simplified and effective dependency resolution engine. It's a dead simple and no-hassle alternative to `requirejs` without the need to write more code or modify your libraries.
+
+[Read why](http://javascriptplayground.com/blog/2013/06/think-async/) [you should](http://www.mobl-lang.org/283/reducing-the-pain-synchronous-asynchronous-programming/) [go async.](http://blog.ometer.com/2011/07/24/callbacks-synchronous-and-asynchronous/)
 
 ##How do I use it?
 
@@ -12,7 +14,7 @@ Asyncloader is a mini tiny JavaScript library that allows you to load JavaScript
 
         <script src="scripts/asyncloader.js"></script>
 
-2.  Then start including your libraries using the `asyncloader.js` API:
+2.  Then start including your libraries using the `add()` method:
 
         <script>
     		AsyncLoader.add('//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js', 'jquery');
