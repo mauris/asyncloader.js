@@ -49,7 +49,15 @@ Asyncloader is a mini tiny JavaScript library that allows you to load JavaScript
         AsyncLoader.add('//connect.facebook.net/en_US/all.js#xfbml=1&appId=XXXXXXXX', 'fb-sdk');
         AsyncLoader.add('//platform.twitter.com/widgets.js', 'twitter-wjs');
 
-- other JavaScript plugins you want use to make fanciful websites.
+- other JavaScript plugins you want use to make fanciful websites. (such as your own scripts)
+
+		AsyncLoader.depends(
+			['bootstrap', 'jquery'],
+			'scripts/mysite.js',
+			function () {
+				console.log('mysite.js has loaded');
+			}
+		);
 
 ##Which sites are using it now?
 
