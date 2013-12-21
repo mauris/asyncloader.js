@@ -28,7 +28,9 @@ var AsyncLoader = (function(loader, d){
                 if( typeof item.url === 'function') {
                     item.url();
                 } else {
-                    loader.add(item.url, item.id, item.load);
+                    window.setTimeout(function(){
+                        loader.add(item.url, item.id, item.load);
+                    }, 0);
                 }
             }
         }
