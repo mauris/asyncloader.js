@@ -10,21 +10,21 @@ Asyncloader is a mini tiny JavaScript library that allows you to load JavaScript
 
 1. First you load `asyncloader.js` up on your page in a `<script>` tag like this:
 
-    <script src="scripts/asyncloader.js"></script>
+        <script src="scripts/asyncloader.js"></script>
 
 2.  Then start including your libraries using the `asyncloader.js` API:
 
-    <script>
-		AsyncLoader.add('//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js', 'jquery');
-    </script>
+        <script>
+    		AsyncLoader.add('//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js', 'jquery');
+        </script>
 
 3. If you are using a dependency that requires another dependency, simply use the `depend()` method and declare its dependencies. It will be asynchronously loaded after its dependencies are loaded. 
 
-	<script>
- 		// doesn't need to be in order
-        AsyncLoader.depends(['jquery'], '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js', 'bootstrap');
-        AsyncLoader.add('//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js', 'jquery');
-    </script>
+		<script>
+	 		// doesn't need to be in order
+	        AsyncLoader.depends(['jquery'], '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js', 'bootstrap');
+	        AsyncLoader.add('//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js', 'jquery');
+	    </script>
 
 ##What can I use it with?
 
