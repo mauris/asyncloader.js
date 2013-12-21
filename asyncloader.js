@@ -47,6 +47,7 @@ var AsyncLoader = (function(loader, d){
     };
 
     loader.depends = function(depends, url, id, load){
+        depends = typeof depends == 'string' ? [depends] : depends;
         waiting.push({
             depends: depends || [],
             url: url,
