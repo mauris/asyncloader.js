@@ -30,26 +30,26 @@ Asyncloader is a mini tiny JavaScript library that allows you to load JavaScript
 
 ##What can I use it with?
 
- - jQuery and other JavaScript frameworks
+- jQuery and other JavaScript frameworks
 
         AsyncLoader.add('//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js', 'jquery');
 
- - Google Analytics or other JavaScript analytics
- - 
+- Google Analytics or other JavaScript analytics
+
         var _gaq = _gaq || [['_setAccount', 'UA-XXXXXXXX-Y'], ['_setDomainName', 'example.com'], ['_trackPageview']];
         AsyncLoader.add(('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js', 'ga');
 
- - Twitter Bootstrap and other UI frameworks
+- Twitter Bootstrap and other UI frameworks
 
         AsyncLoader.depends(['jquery'], '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js', 'bootstrap');
 
- - Social Media plugins like Facebook like buttons, Twitter tweet buttons, Google Plus buttons etc.
+- Social Media plugins like Facebook like buttons, Twitter tweet buttons, Google Plus buttons etc.
 
         AsyncLoader.add('https://apis.google.com/js/plusone.js', 'gplus');
-        AsyncLoader.add('//connect.facebook.net/en_US/all.js#xfbml=1&appId=180508825470385', 'fb-sdk');
+        AsyncLoader.add('//connect.facebook.net/en_US/all.js#xfbml=1&appId=XXXXXXXX', 'fb-sdk');
         AsyncLoader.add('//platform.twitter.com/widgets.js', 'twitter-wjs');
 
- - other JavaScript plugins you want use to make fanciful websites.
+- other JavaScript plugins you want use to make fanciful websites.
 
 ##Which sites are using it now?
 
