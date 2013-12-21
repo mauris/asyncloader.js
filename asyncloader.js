@@ -4,9 +4,10 @@
  * See file LICENSE or go to http://opensource.org/licenses/BSD-3-Clause for full license details.
  */
 
-var AsyncLoader = {};
-(function(loader, d, s){
-    var fjs = d.getElementsByTagName(s)[0], waiting = [];
+var AsyncLoader = (function(loader, d){
+    var s = 'script',
+        fjs = d.getElementsByTagName(s)[0],
+        waiting = [];
 
     var removeInArray = function(arr) {
         var what, a = arguments, L = a.length, ax;
@@ -53,4 +54,6 @@ var AsyncLoader = {};
             load: load
         });
     };
-})(AsyncLoader, document, 'script');
+
+    return loader;
+})(AsyncLoader || {}, document);
